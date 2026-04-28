@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saint DAC | Speech Architect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@300;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <main class="app-container">
+        <header class="app-header">
+            <div class="logo">
+                <span class="logo-saint">SAINT</span><span class="logo-dac">DAC</span>
+            </div>
+            <h1 class="app-title">Speech Architect</h1>
+            <div class="lang-selector">
+                <button id="btn-es" class="lang-btn active" onclick="setLanguage('es')">ES</button>
+                <button id="btn-pt" class="lang-btn" onclick="setLanguage('pt')">PT</button>
+            </div>
+        </header>
+
+        <section class="config-panel glass">
+            <div class="input-group">
+                <label for="prospect-name">Nombre del Prospecto</label>
+                <input type="text" id="prospect-name" placeholder="Ej: Bruno, Miller, Emma..." oninput="generateAll()">
+            </div>
+            <div class="input-group">
+                <label for="prospect-niche">Nicho / Rubro</label>
+                <input type="text" id="prospect-niche" placeholder="Ej: Construtora, Estética, Real Estate..." oninput="generateAll()">
+            </div>
+        </section>
+
+        <nav class="tab-nav">
+            <button class="tab-btn active" onclick="showTab('cold-call')">Llamada en Frío</button>
+            <button class="tab-btn" onclick="showTab('whatsapp')">WhatsApp / Contacto</button>
+            <button class="tab-btn" onclick="showTab('rebuttals')">Manejo de Objeciones</button>
+        </nav>
+
+        <section id="tab-cold-call" class="tab-content active">
+            <div class="output-card glass">
+                <div class="card-header">
+                    <h3>Script: Apertura Clínica</h3>
+                    <button class="copy-btn" onclick="copyText('cold-call-output')">Copiar</button>
+                </div>
+                <div id="cold-call-output" class="script-content">
+                    <!-- Generated text goes here -->
+                </div>
+            </div>
+        </section>
+
+        <section id="tab-whatsapp" class="tab-content">
+            <div class="scenario-grid">
+                <div class="output-card glass">
+                    <div class="card-header">
+                        <h3>Escenario 1: Sin Sitio Web</h3>
+                        <button class="copy-btn" onclick="copyText('wa-no-site')">Copiar</button>
+                    </div>
+                    <div id="wa-no-site" class="script-content"></div>
+                </div>
+                <div class="output-card glass">
+                    <div class="card-header">
+                        <h3>Escenario 2: Sitio Malo/Viejo</h3>
+                        <button class="copy-btn" onclick="copyText('wa-bad-site')">Copiar</button>
+                    </div>
+                    <div id="wa-bad-site" class="script-content"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tab-rebuttals" class="tab-content">
+            <div id="rebuttals-container" class="rebuttals-list">
+                <!-- Rebuttals will be injected here -->
+            </div>
+        </section>
+
+        <footer class="app-footer">
+            <p>Sistema de Nick | Saint DAC Studio &copy; 2026</p>
+        </footer>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
