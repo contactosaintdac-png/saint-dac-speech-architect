@@ -196,7 +196,11 @@ function generateAll() {
         saludo = currentLang === 'es' ? `Hola ${person}` : `Olá ${person}`;
         personaLabel = person;
     } else {
-        saludo = currentLang === 'es' ? "Hola, ¿cómo estás?" : "Olá, tudo bem?";
+        if (currentLang === 'es') {
+            saludo = `Hola, ¿cómo estás? Disculpá, ¿hablo con el dueño o el encargado de ${brand}?`;
+        } else {
+            saludo = `Olá, tudo bem? Desculpe, falo com o dono ou o responsável pela ${brand}?`;
+        }
         personaLabel = currentLang === 'es' ? "[Nombre]" : "[Nome]";
     }
 
