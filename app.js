@@ -1,28 +1,48 @@
 const scripts = {
     es: {
         coldCall: {
-            hasSite: `1. Apertura:
-"[SALUDO], te hablo de imprevisto, soy [Speaker] de Saint DAC. Sé que no nos conocemos y seguro estás a mil, ¿me das 30 segundos y te digo exacto por qué te llamo? Si no hace sentido, te corto yo mismo."
+            hasSite: `"[SALUDO]. Te soy directo: no te llamo para comprarte nada.
 
-2. El Gancho:
-"Te llamo por lo siguiente: me crucé con tu perfil y le di un vistazo rápido a la página actual de [Marca]. A simple vista, detecté un par de cuellos de botella técnicos y de estructura que no están reflejando el nivel del trabajo que das. Básicamente, tu web hoy funciona como un folleto estático, pero a nivel de código y posicionamiento está perdiendo fuerza frente a competidores más actualizados."
+Estaba viendo [Nicho] en la zona y di con ustedes. El nivel que manejan es muy bueno… pero la web que tienen hoy no refleja eso ni de cerca.
 
-3. La Propuesta de Valor:
-"En mi estudio no hacemos 'páginas web' comunes; armamos ecosistemas digitales premium e inmersivos. Mi propuesta es esta: quiero correr una auditoría técnica profunda de [Marca] hoy, detectar exactamente dónde estás perdiendo tráfico, y armarte un prototipo funcional de cómo debería verse tu negocio con tecnología de punta para atraer clientes premium."
+Cuando alguien entra ahí, no percibe el valor real y termina comparándote con opciones más baratas o más “modernas”.
 
-4. El Cierre:
-"Todo esto te lo armo yo por mi cuenta sin costo. Lo único que te pido es que mañana nos conectemos 5 minutos en una llamada. Te comparto pantalla, te muestro los datos duros de la auditoría y el prototipo. Si te vuela la cabeza, charlamos. Si no, te llevás el diagnóstico técnico de regalo. ¿Te queda mejor mañana a la mañana o por la tarde?"`,
-            noSite: `1. Apertura:
-"[SALUDO], te hablo de imprevisto, soy [Speaker] de Saint DAC. Sé que no nos conocemos y seguro estás a mil, ¿me das 30 segundos y te digo exacto por qué te llamo? Si no hace sentido, te corto yo mismo."
+Decime algo… ¿vos sentís que hoy tu web te ayuda a cerrar mejores clientes o que simplemente está ahí y no mueve la aguja?"
 
-2. El Gancho:
-"Te llamo por lo siguiente: estuve investigando negocios de [Nicho] en la zona y vi que [Marca] tiene una reputación excelente, pero no encontré tu sitio web oficial. Hoy por hoy, eso significa que estás dejando que Google decida a quién enviarle tus clientes potenciales, y probablemente terminen en la competencia solo porque ellos sí tienen una ventana digital abierta."
+*(PAUSA – que responda)*
 
-3. La Propuesta de Valor:
-"En Saint DAC creamos experiencias inmersivas que posicionan a negocios como el tuyo como líderes indiscutidos. Como ya estuve analizando tu rubro, me adelanté y ya te armé un prototipo funcional de cómo debería verse la presencia digital premium de [Marca] para captar esos clientes que hoy se te están escapando."
+"Claro, es lo que suelo ver.
 
-4. El Cierre:
-"No te quiero vender nada por teléfono. Solo quiero que mañana nos conectemos 5 minutos en una llamada rápida. Te comparto pantalla, te muestro el prototipo que ya tengo listo para vos y ves el potencial. Si no te gusta, no lo usás y listo. ¿Te queda bien a las 10 o a las 11?"`
+Mirá, soy [Speaker]. Me dedico justamente a resolver ese punto.
+
+Viendo eso, me adelanté y armé un borrador de cómo debería verse tu negocio para que transmita el nivel que realmente tenés y te traiga clientes más calificados.
+
+No estoy seguro si esto encaja con lo que ustedes buscan ahora, pero verlo no tiene costo.
+
+Son 5 minutos, te comparto pantalla y vos decidís si tiene sentido o no.
+
+Mañana tengo la agenda bastante cargada, pero te hago un hueco rápido… ¿te queda mejor a las 10 o a las 11?"`,
+            noSite: `"[SALUDO]. Te soy sincero: no te llamo para contratarte ni venderte algo ahora.
+
+Estaba buscando [Nicho] por la zona y vi que tienen muy buena reputación… pero me llamó la atención que no encontré una web oficial.
+
+Hoy eso significa algo simple: cuando alguien te busca, Google decide mandarlo a la competencia que sí está mejor posicionada.
+
+Decime… ¿vos sos consciente de cuántos posibles clientes se te están yendo por no tener esa presencia?"
+
+*(PAUSA – que responda)*
+
+"Entiendo.
+
+Mirá, soy [Speaker]. Trabajo con negocios como el tuyo en eso puntual.
+
+Como vi el potencial que tienen, me adelanté y armé un borrador de cómo debería verse tu negocio online para captar esos clientes que hoy se están perdiendo.
+
+No sé si esto es prioridad para ustedes ahora, pero verlo no tiene costo.
+
+Son 5 minutos, te muestro en pantalla y vos decidís.
+
+Mañana estoy bastante justo de tiempo, pero te hago un hueco… ¿10 o 11 te sirve mejor?"`
         },
         stage2: {
             title: "Fase 2: El Cierre (Durante la Llamada)",
@@ -39,22 +59,76 @@ const scripts = {
 "Mi sistema es simple: el trabajo pesado ya está hecho. Si te gusta lo que ves y querés que lo lancemos oficialmente para [Marca], el costo es de [Precio], llave en mano. Si preferís quedarte como estás, no hay problema. ¿Qué te pareció el diseño?"`
         },
         whatsapp: {
-            noSite: `Globo 1: "Hola [Nombre]! ¿Todo bien? Aquí [Speaker]. Estaba en Google buscando [Nicho] y vi a [Marca]. Tu trabajo parece muy bueno, pero vi que no tienen un sitio web."
+            hasSite: `**Mensaje 1 (gancho):**
+"[SALUDO]. Te escribo directo: no soy cliente ni te voy a vender nada ahora.
+Estuve viendo tu negocio y la verdad, el nivel que tenés es bueno… pero la web que estás usando hoy no lo refleja.
+Eso hace que gente que podría pagarte bien termine yéndose con otros que “parecen” más profesionales online.
 
-Globo 2: "¿Ya pensaron en armar uno para captar a los clientes que buscan en Google y llevarlos directo a tu WhatsApp?"
+Decime algo, siendo honesto:
+¿alguna vez pensaste cuántos clientes estás perdiendo por esa diferencia entre lo que sos y lo que mostrás?"
 
-(Si responden):
-Globo 3: "Entiendo. De hecho, fue por eso que te escribí. Como me dedico a hacer sitios para negocios de este nivel, me adelanté y ya te dejé un prototipo funcional listo para [Marca]."
+*(PAUSA. NO MANDES MÁS HASTA QUE RESPONDA)*
 
-Globo 4: "No tiene costo alguno echarle un vistazo. ¿Tenés 5 minutitos hoy o mañana para que te comparta pantalla rápido en una llamada y te lo muestre? Si no te gusta, no pasa nada."`,
-            badSite: `Globo 1: "Hola [Nombre]! ¿Todo bien? Aquí [Speaker]. Estaba en Google mirando negocios de [Nicho] y entré al sitio de [Marca]. Siendo bien sincero, no está a la altura y no valora el nivel de trabajo que hacés."
+---
+**Mensaje 2 (propuesta + cierre):**
+"Te entiendo. Mirá, perdón que no me presenté bien: soy [Speaker]. Me dedico a justamente corregir eso en negocios como el tuyo.
 
-Globo 2: "¿Cuándo fue la última vez que lo actualizaron? ¿Ya pensaron en darle un upgrade?"
+Como vi potencial, ya me adelanté y armé un diseño de cómo debería verse tu negocio para atraer mejores clientes.
 
-(Si responden):
-Globo 3: "Imaginé. Como creo sitios para negocios premium, me adelanté y ya monté una versión nueva y moderna para [Marca]."
+Verlo no tiene costo.
+Son 5 minutos, te comparto pantalla y vos decidís si tiene sentido o no.
 
-Globo 4: "¿Tenés 5 minutitos esta semana para que te comparta pantalla en una llamada y te muestre cómo quedó? Si no te convence y querés mantener el anterior, sin problema."`
+Mañana tengo agenda cargada, pero te hago un hueco.
+¿10:00 o 11:00 te queda mejor?"
+
+---
+**Si pide link / PDF:**
+"Me encantaría mandártelo, pero por acá pierde todo el sentido y no vas a ver el valor real.
+Por eso te lo muestro yo en 5 minutos y listo.
+¿10 o 11?"
+
+---
+**Si tira “no me interesa”:**
+"Perfecto, entonces entiendo que ya estás cubriendo todo el flujo de clientes que necesitás y no hay fuga.
+Si en algún momento querés validar eso, lo vemos.
+Sino, seguimos así y listo."`,
+            noSite: `**Mensaje 1 (gancho):**
+"[SALUDO]. Te escribo directo: no soy cliente ni te quiero vender nada ahora.
+
+Estuve buscando [Nicho] en la zona y vi que tu negocio tiene muy buena reputación…
+pero me llamó la atención que no tenés web.
+
+Hoy eso significa que Google está mandando clientes tuyos directo a la competencia.
+
+Decime algo:
+¿tenés idea cuántas oportunidades estás perdiendo por no estar ahí?"
+
+*(PAUSA. ESPERAR RESPUESTA)*
+
+---
+**Mensaje 2 (propuesta + cierre):**
+"Entiendo. Mirá, soy [Speaker]. Me dedico a ayudar negocios como el tuyo a capturar esos clientes que hoy se escapan.
+
+Como ya analicé tu caso, me adelanté y armé un diseño de cómo debería verse tu negocio online para atraer ese tipo de clientes.
+
+Verlo es gratis.
+Son 5 minutos, te comparto pantalla y vos mismo decidís si sirve o no.
+
+Mañana estoy a full, pero te hago un hueco rápido.
+¿10:00 o 11:00?"
+
+---
+**Si pide que se lo mandes:**
+"Me gustaría pasártelo, pero por acá no se entiende nada y pierde todo el impacto.
+Por eso lo vemos juntos 5 minutos y listo.
+¿10 o 11?"
+
+---
+**Si responde hostil:**
+"Te entiendo, si ya estás cubierto y no necesitás más clientes, entonces no tiene sentido.
+
+Retiro la propuesta y te dejo tranquilo.
+Si en algún momento querés validar eso, lo vemos."`
         },
         rebuttals: [
             { t: "Ocupado: 'Estoy a mil / No tengo tiempo'", q: "tiempo ocupado mil", a: "Justamente por eso te hablo, sé que como dueño de negocio estás a mil. Por eso no te pido reuniones de una hora ni que llenes formularios. Ya me adelanté e hice todo el laburo pesado yo. Son 5 minutos de reloj. Te muestro la solución visual y te dejo seguir laburando. ¿Te robo 5 minutos hoy a las 17 o mañana a la mañana?" },
@@ -71,28 +145,48 @@ Globo 4: "¿Tenés 5 minutitos esta semana para que te comparta pantalla en una 
     },
     pt: {
         coldCall: {
-            hasSite: `1. Abertura:
-"[SALUDO], te ligo de improviso, sou [Speaker] da Saint DAC. Sei que não nos conhecemos e com certeza você está corrido, me dá 30 segundos e te digo exatamente por que estou ligando? Se não fizer sentido, eu mesmo desligo."
+            hasSite: `"[SALUDO]. Vou ser direto: não te ligo para comprar nada.
 
-2. O Gancho:
-"Ligo pelo seguinte: cruzei com seu perfil e dei uma olhada rápida no site atual da [Marca]. À primeira vista, detectei alguns gargalos técnicos e de estrutura que não estão refletindo o nível do trabalho que você entrega. Basicamente, sua presença digital hoje funciona como um folheto estático, mas em nível de código e posicionamento está perdendo força para competidores mais atualizados."
+Estava vendo [Nicho] na região e encontrei vocês. O nível que entregam é muito bom… mas o site que têm hoje não reflete isso nem de perto.
 
-3. A Proposta de Valor:
-"No meu estúdio não fazemos 'sites' comuns; montamos ecossistemas digitais premium e imersivos. Minha proposta é esta: quero rodar uma auditoria técnica profunda da [Marca] hoje, detectar exatamente onde você está perdendo tráfego, e montar um protótipo funcional de como deveria ser seu negócio com tecnologia de ponta para atrair clientes premium."
+Quando alguém entra lá, não percebe o valor real e acaba te comparando com opções mais baratas ou mais 'modernas'.
 
-4. O Fechamento:
-"Tudo isso eu monto por minha conta, sem custo. A única coisa que te peço é que amanhã nos conectemos 5 minutos em uma chamada. Te compartilho a tela, te mostro os dados reais da auditoria e o protótipo. Se você pirar na ideia, conversamos. Se não, você leva o diagnóstico técnico de presente. Fica melhor amanhã de manhã ou à tarde?"`,
-            noSite: `1. Abertura:
-"[SALUDO], te ligo de improviso, sou [Speaker] da Saint DAC. Sei que não nos conhecemos e com certeza você está corrido, me dá 30 segundos e te digo exatamente por que estou ligando? Se não fizer sentido, eu mesmo desligo."
+Me diz uma coisa… você sente que hoje seu site te ajuda a fechar com melhores clientes ou simplesmente está lá e não faz diferença?"
 
-2. O Gancho:
-"Ligo pelo seguinte: estive pesquisando negócios de [Nicho] na região e vi que a [Marca] tem uma reputação excelente, mas não encontrei seu site oficial. Hoje em dia, isso significa que você está deixando o Google decidir para quem enviar seus clientes potenciais."
+*(PAUSA – que responda)*
 
-3. A Proposta de Valor:
-"Na Saint DAC criamos experiências imersivas que posicionam negócios como o seu como líderes. Como já estive analisando seu setor, me adientei e já montei um protótipo funcional de como deveria ser a presença digital premium da [Marca] para captar esses clientes que hoje estão escapando."
+"Claro, é o que costumo ver.
 
-4. O Fechamento:
-"Não quero te vender nada por telefone. Só quero que amanhã nos conectemos 5 minutos em uma chamada rápida. Te compartilho a tela, te mostro o protótipo que já tenho pronto e você vê o potencial. Se não gostar, tá tudo certo. Fica bem às 10h ou 11h?"`
+Olha, sou [Speaker]. Me dedico justamente a resolver esse ponto.
+
+Vendo isso, me adientei e montei um rascunho de como deveria ser o seu negócio para que transmita o nível que você realmente tem e te traga clientes mais qualificados.
+
+Não tenho certeza se isso se encaixa com o que vocês buscam agora, mas ver não custa nada.
+
+São 5 minutos, te compartilho a tela e você decide se faz sentido ou não.
+
+Amanhã tenho a agenda bem cheia, mas abro um espaço rápido… fica melhor às 10 ou às 11?"`,
+            noSite: `"[SALUDO]. Sou sincero: não te ligo para contratar nem te vender algo agora.
+
+Estava buscando [Nicho] pela região e vi que têm uma reputação muito boa… mas me chamou a atenção que não encontrei um site oficial.
+
+Hoje isso significa algo simples: quando alguém te busca, o Google decide mandá-lo para a concorrência que sim está melhor posicionada.
+
+Me diz… você tem noção de quantos possíveis clientes estão indo embora por não ter essa presença?"
+
+*(PAUSA – que responda)*
+
+"Entendo.
+
+Olha, sou [Speaker]. Trabalho com negócios como o seu nisso pontualmente.
+
+Como vi o potencial que têm, me adientei e montei um rascunho de como deveria ser a sua presença online para captar esses clientes que hoje estão se perdendo.
+
+Não sei se isso é prioridade para vocês agora, mas ver não custa nada.
+
+São 5 minutos, te mostro na tela e você decide.
+
+Amanhã estou com o tempo bem apertado, mas abro um espaço… 10 ou 11 fica melhor?"`
         },
         stage2: {
             title: "Fase 2: O Fechamento (Durante a Chamada)",
@@ -109,22 +203,76 @@ Globo 4: "¿Tenés 5 minutitos esta semana para que te comparta pantalla en una 
 "Meu sistema é simples: o trabalho pesado já está pronto. Se você gostou e quer que lancemos oficialmente para a [Marca], o custo é de [Precio]. Se preferir continuar como está, sem problemas. O que achou do design?"`
         },
         whatsapp: {
-            noSite: `Globo 1: "Oi [Nombre]! Tudo bem? Aqui é [Speaker]. Eu tava no Google buscando [Nicho] e vi a [Marca]. O trabalho de vocês parece muito bom, mas vi que não têm um site."
+            hasSite: `**Mensagem 1 (gancho):**
+"[SALUDO]. Te escrevo direto: não sou cliente nem vou te vender nada agora.
+Estive vendo o seu negócio e a verdade é que o nível que vocês têm é bom… mas o site que estão usando hoje não reflete isso.
+Isso faz com que pessoas que poderiam te pagar bem acabem indo com outros que 'parecem' mais profissionais online.
 
-Globo 2: "Vocês já pensaram em montar um pra pegar os clientes que buscam no Google e levar pro WhatsApp?"
+Me diz uma coisa, sendo honesto:
+você já parou pra pensar quantos clientes está perdendo por essa diferença entre o que você é e o que mostra?"
 
-(Se responderem):
-Globo 3: "Entendi. Na verdade, foi por isso que eu te chamei. Como eu faço sites pra negócios desse nível, me adientei e já deixei um protótipo pronto pra [Marca]."
+*(PAUSA. NÃO MANDE MAIS ATÉ QUE RESPONDA)*
 
-Globo 4: "Não tem custo nenhum pra dar uma olhada. Você tem 5 minutinhos hoje ou amanhã pra eu compartilhar minha tela rápido em uma chamada e te mostrar? Se não gostar, tá tudo certo."`,
-            badSite: `Globo 1: "Oi [Nombre]! Tudo bem? Aqui é [Speaker]. Eu tava no Google dando uma olhada nos negócios de [Nicho] e acabei entrando no site da [Marca]. Sendo bem sincero, ele não tá legal e não valoriza o trabalho que vocês fazem."
+---
+**Mensagem 2 (proposta + fechamento):**
+"Te entendo. Olha, desculpe não me apresentar direito: sou [Speaker]. Me dedico justamente a corrigir isso em negócios como o seu.
 
-Globo 2: "Quando foi a última vez que vocês atualizaram ele? Já pensaram em dar um upgrade?"
+Como vi potencial, já me adientei e montei um design de como deveria ser o seu negócio para atrair melhores clientes.
 
-(Se responderem):
-Globo 3: "Imaginei. Como eu crio sites pra negócios locais premium, me adientei e já montei uma versão nova e moderna para a [Marca]."
+Ver não tem custo.
+São 5 minutos, te compartilho a tela e você decide se faz sentido ou não.
 
-Globo 4: "Você tem 5 minutinhos essa semana pra eu compartilhar a tela em uma chamada e te mostrar como ficou? Se não curtir e quiser manter o antigo, sem problema nenhum."`
+Amanhã tenho a agenda cheia, mas abro um espaço.
+10:00 ou 11:00 fica melhor para você?"
+
+---
+**Se pedir link / PDF:**
+"Adoraria te mandar, mas por aqui perde todo o sentido e você não vai ver o valor real.
+Por isso te mostro em 5 minutos e pronto.
+10 ou 11?"
+
+---
+**Se disser "não me interessa":**
+"Perfeito, então entendo que já estão cobrindo todo o fluxo de clientes que precisam e não há fuga.
+Se em algum momento quiser validar isso, a gente vê.
+Senão, seguimos assim e tudo certo."`,
+            noSite: `**Mensagem 1 (gancho):**
+"[SALUDO]. Te escrevo direto: não sou cliente nem quero te vender nada agora.
+
+Estive buscando [Nicho] na região e vi que o seu negócio tem uma reputação muito boa…
+mas me chamou a atenção que não têm site.
+
+Hoje isso significa que o Google está mandando seus clientes direto para a concorrência.
+
+Me diz uma coisa:
+você tem ideia de quantas oportunidades está perdendo por não estar lá?"
+
+*(PAUSA. ESPERAR RESPOSTA)*
+
+---
+**Mensagem 2 (proposta + fechamento):**
+"Entendo. Olha, sou [Speaker]. Me dedico a ajudar negócios como o seu a capturar esses clientes que hoje escapam.
+
+Como já analisei seu caso, me adientei e montei um design de como deveria ser o seu negócio online para atrair esse tipo de clientes.
+
+Ver é grátis.
+São 5 minutos, te compartilho a tela e você mesmo decide se serve ou não.
+
+Amanhã estou corrido, mas abro um espaço rápido.
+10:00 ou 11:00?"
+
+---
+**Se pedir para mandar:**
+"Gostaria de passar, mas por aqui não dá pra entender nada e perde todo o impacto.
+Por isso vemos juntos em 5 minutos e pronto.
+10 ou 11?"
+
+---
+**Se responder hostil:**
+"Te entendo, se já estão cobertos e não precisam de mais clientes, então não faz sentido.
+
+Retiro a proposta e te deixo tranquilo.
+Se em algum momento quiser validar isso, a gente vê."`
         },
         rebuttals: [
             { t: "Ocupado: 'Estou a mil / Não tenho tempo'", q: "tempo ocupado mil", a: "Justamente por isso te ligo, sei que como dono de negócio você está a mil. Por isso não te peço reuniões de uma hora. Já fiz todo o trabalho pesado. São 5 minutos. Te mostro a solução visual e te deixo trabalhar. Pode hoje às 17h ou amanhã cedo?" },
@@ -232,10 +380,10 @@ function generateAll() {
     const waOutput = document.getElementById('wa-output');
     const waTitle = document.getElementById('wa-title');
     if (hasSite) {
-        waTitle.innerText = currentLang === 'es' ? "WhatsApp: Sitio Malo/Viejo" : "WhatsApp: Site Ruim/Antigo";
-        waOutput.innerHTML = replaceTags(scripts[currentLang].whatsapp.badSite);
+        waTitle.innerText = currentLang === 'es' ? "WhatsApp: SÍ TIENE SITIO" : "WhatsApp: JÁ TEM SITE";
+        waOutput.innerHTML = replaceTags(scripts[currentLang].whatsapp.hasSite);
     } else {
-        waTitle.innerText = currentLang === 'es' ? "WhatsApp: Sin Sitio Web" : "WhatsApp: Sem Site";
+        waTitle.innerText = currentLang === 'es' ? "WhatsApp: NO TIENE SITIO" : "WhatsApp: NÃO TEM SITE";
         waOutput.innerHTML = replaceTags(scripts[currentLang].whatsapp.noSite);
     }
 
