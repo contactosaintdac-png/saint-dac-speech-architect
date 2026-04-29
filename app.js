@@ -59,7 +59,7 @@ Globo 4: "¿Tenés 5 minutitos esta semana para que te comparta pantalla en una 
         rebuttals: [
             { t: "Ocupado: 'Estoy a mil / No tengo tiempo'", q: "tiempo ocupado mil", a: "Justamente por eso te hablo, sé que como dueño de negocio estás a mil. Por eso no te pido reuniones de una hora ni que llenes formularios. Ya me adelanté e hice todo el laburo pesado yo. Son 5 minutos de reloj. Te muestro la solución visual y te dejo seguir laburando. ¿Te robo 5 minutos hoy a las 17 o mañana a la mañana?" },
             { t: "Blindado: 'Ya tenemos a alguien / Mi sobrino'", q: "sobrino agencia manejando alguien", a: "¡Qué bueno que ya tengan a alguien! Mejor, así no arrancan de cero. Igual, como ya me tomé el atrevimiento de armarles este prototipo premium para [Marca], conectate 5 minutos y miralo. Capaz ves algo en mi diseño que te vuela la cabeza y se lo podés pedir a la persona que les maneja la web ahora para que mejoren lo que tienen. Todo ganancia para vos." },
-            { t: "Boca a boca: 'Sólo vivimos de indicação'", q: "boca boca recomendacion indicacao", a: "Pô, o trabalho de vocês deve ser muito bom mesmo então. Pero fijate esto: la persona que recibe esa recomendación va a ir a buscarte a Google para confirmar, y si ve un sitio que da mala impresión o no encuentra nada, desiste y es plata que dejás en la mesa. Dejame mostrarte en 5 minutos cómo agarrar a esos clientes." },
+            { t: "Boca a boca: 'Sólo vivimos de indicação'", q: "boca boca recomendacion indicacao", a: "Pô, o trabalho de vocês debe ser muito bom mesmo então. Pero fijate esto: la persona que recibe esa recomendación va a ir a buscarte a Google para confirmar, y si ve un sitio que da mala impresión o no encuentra nada, desiste y es plata que dejás en la mesa. Dejame mostrarte en 5 minutos cómo agarrar a esos clientes." },
             { t: "Estafado: 'Me cobraron carisimo'", q: "caro estafado plata reales 3000", a: "Te entiendo, 3 mil reales es mucha plata. Y si te dijera que yo ya hice el sitio de [Marca], y si llega a gustarte, el costo es una fracción mínima de eso? No cuesta nada mirar la pantalla, si no te gusta, simplemente te vas." },
             { t: "Ya se está ocupando: 'Já tô vendo isso'", q: "viendo tratando ocupando massa", a: "Que massa! Pero como yo ya tengo el sitio de [Marca] prontinho, te propongo que le des una mirada gratuita de 5 minutos. Si el mío está mejor, directamente usás el mío y ahorrás tiempo. ¿Te parece?" },
             { t: "Es muy caro (Anclaje)", q: "caro precio presupuesto reales 10000", a: "No estamos hablando de precios ahora, pero para que te des una idea, agencias en São Paulo están cobrando 10 mil reales por un sitio inmersivo de este nivel. Yo ya te armé la maqueta gratis. Mirala 5 minutos, y si sentís que es lo que [Marca] necesita para no perder clientes, te vas a sorprender de lo accesible que es." },
@@ -143,6 +143,7 @@ Globo 4: "Você tem 5 minutinhos essa semana pra eu compartilhar a tela em uma c
 
 let currentLang = 'es';
 let currentSpeaker = 'Brian';
+let hasSite = true;
 
 function setLanguage(lang) {
     currentLang = lang;
@@ -155,17 +156,11 @@ function setLanguage(lang) {
         tabs[1].innerText = "Fase 2: El Cierre";
         tabs[2].innerText = "WhatsApp";
         tabs[3].innerText = "Objeciones";
-        document.querySelector('label[for="prospect-person"]').innerText = "Nombre de la Persona";
-        document.querySelector('label[for="prospect-brand"]').innerText = "Nombre de la Marca/Empresa";
-        document.querySelector('label[for="prospect-niche"]').innerText = "Nicho / Rubro";
     } else {
         tabs[0].innerText = "Fase 1: Prospecção";
         tabs[1].innerText = "Fase 2: O Fechamento";
         tabs[2].innerText = "WhatsApp";
         tabs[3].innerText = "Objeções";
-        document.querySelector('label[for="prospect-person"]').innerText = "Nome da Pessoa";
-        document.querySelector('label[for="prospect-brand"]').innerText = "Nome da Marca/Empresa";
-        document.querySelector('label[for="prospect-niche"]').innerText = "Nicho / Setor";
     }
 
     generateAll();
@@ -178,10 +173,16 @@ function setSpeaker(speaker) {
     generateAll();
 }
 
+function setHasSite(status) {
+    hasSite = status;
+    document.querySelectorAll('.toggle-btn').forEach(btn => btn.classList.remove('active'));
+    document.getElementById(status ? 'btn-site-yes' : 'btn-site-no').classList.add('active');
+    generateAll();
+}
+
 function showTab(tabId) {
     document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
     document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
-    
     document.getElementById(`tab-${tabId}`).classList.add('active');
     event.currentTarget.classList.add('active');
 }
@@ -213,18 +214,31 @@ function generateAll() {
             .replace(/\[Nombre\]/g, `<span class="placeholder">${personaLabel}</span>`);
     };
 
-    // Stage 1
-    document.getElementById('cc-has-site').innerHTML = replaceTags(scripts[currentLang].coldCall.hasSite);
-    document.getElementById('cc-no-site').innerHTML = replaceTags(scripts[currentLang].coldCall.noSite);
+    // Stage 1 rendering
+    const ccOutput = document.getElementById('cc-output');
+    const ccTitle = document.getElementById('cc-title');
+    if (hasSite) {
+        ccTitle.innerText = currentLang === 'es' ? "Escenario: SÍ TIENE SITIO" : "Cenário: JÁ TEM SITE";
+        ccOutput.innerHTML = replaceTags(scripts[currentLang].coldCall.hasSite);
+    } else {
+        ccTitle.innerText = currentLang === 'es' ? "Escenario: NO TIENE SITIO" : "Cenário: NÃO TEM SITE";
+        ccOutput.innerHTML = replaceTags(scripts[currentLang].coldCall.noSite);
+    }
 
     // Stage 2
     document.getElementById('stage-2-output').innerHTML = replaceTags(scripts[currentLang].stage2.content);
 
-    // WhatsApp
-    document.getElementById('wa-no-site').innerHTML = replaceTags(scripts[currentLang].whatsapp.noSite);
-    document.getElementById('wa-bad-site').innerHTML = replaceTags(scripts[currentLang].whatsapp.badSite);
+    // WhatsApp rendering
+    const waOutput = document.getElementById('wa-output');
+    const waTitle = document.getElementById('wa-title');
+    if (hasSite) {
+        waTitle.innerText = currentLang === 'es' ? "WhatsApp: Sitio Malo/Viejo" : "WhatsApp: Site Ruim/Antigo";
+        waOutput.innerHTML = replaceTags(scripts[currentLang].whatsapp.badSite);
+    } else {
+        waTitle.innerText = currentLang === 'es' ? "WhatsApp: Sin Sitio Web" : "WhatsApp: Sem Site";
+        waOutput.innerHTML = replaceTags(scripts[currentLang].whatsapp.noSite);
+    }
 
-    // Rebuttals
     renderObjections();
 }
 
@@ -232,33 +246,24 @@ function renderObjections(filter = "") {
     const container = document.getElementById('rebuttals-container');
     const brand = document.getElementById('prospect-brand').value.trim() || (currentLang === 'es' ? '[Marca]' : '[Marca]');
     const person = document.getElementById('prospect-person').value.trim() || (currentLang === 'es' ? '[Nombre]' : '[Nome]');
-    
     container.innerHTML = '';
-    
     const filteredList = scripts[currentLang].rebuttals.filter(item => 
         item.t.toLowerCase().includes(filter.toLowerCase()) || 
         item.q.toLowerCase().includes(filter.toLowerCase()) ||
         item.a.toLowerCase().includes(filter.toLowerCase())
     );
-
     filteredList.forEach((item, index) => {
         const itemDiv = document.createElement('div');
         itemDiv.className = 'accordion-item glass';
-        
         const header = document.createElement('button');
         header.className = 'accordion-header';
         header.innerText = item.t;
-        header.onclick = () => {
-            itemDiv.classList.toggle('active');
-        };
-        
+        header.onclick = () => itemDiv.classList.toggle('active');
         const content = document.createElement('div');
         content.className = 'accordion-content';
-        
         const ans = document.createElement('p');
         ans.className = 'rebuttal-ans';
         ans.innerText = item.a.replace(/\[Marca\]/g, brand).replace(/\[Nombre\]/g, person);
-        
         content.appendChild(ans);
         itemDiv.appendChild(header);
         itemDiv.appendChild(content);
@@ -267,15 +272,12 @@ function renderObjections(filter = "") {
 }
 
 function filterObjections() {
-    const val = document.getElementById('objection-search').value;
-    renderObjections(val);
+    renderObjections(document.getElementById('objection-search').value);
 }
 
 function copyText(elementId) {
     const el = document.getElementById(elementId);
-    const textToCopy = el.innerText;
-    
-    navigator.clipboard.writeText(textToCopy).then(() => {
+    navigator.clipboard.writeText(el.innerText).then(() => {
         const btn = event.currentTarget;
         const originalText = btn.innerText;
         btn.innerText = currentLang === 'es' ? '¡Copiado!' : 'Copiado!';

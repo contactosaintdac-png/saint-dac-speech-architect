@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saint DAC | Speech Architect v2</title>
+    <title>Saint DAC | Speech Architect v2.1</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@300;600;800&display=swap" rel="stylesheet">
@@ -36,15 +36,22 @@
             <div class="input-row">
                 <div class="input-group">
                     <label for="prospect-person">Nombre de la Persona</label>
-                    <input type="text" id="prospect-person" placeholder="Luis, Bruno, Miller (O vacío si no sabés)" oninput="generateAll()">
+                    <input type="text" id="prospect-person" placeholder="Luis, Bruno... (Vacío = Filtro)" oninput="generateAll()">
                 </div>
                 <div class="input-group">
-                    <label for="prospect-brand">Nombre de la Marca/Empresa</label>
-                    <input type="text" id="prospect-brand" placeholder="Miller Plumbing, Reziero's..." oninput="generateAll()">
+                    <label for="prospect-brand">Nombre de la Marca</label>
+                    <input type="text" id="prospect-brand" placeholder="Empresa..." oninput="generateAll()">
                 </div>
                 <div class="input-group">
                     <label for="prospect-niche">Nicho / Rubro</label>
                     <input type="text" id="prospect-niche" placeholder="Construtora, Estética..." oninput="generateAll()">
+                </div>
+            </div>
+            <div class="toggle-row">
+                <label>¿TIENE SITIO WEB ACTUALMENTE?</label>
+                <div class="site-toggle glass">
+                    <button id="btn-site-yes" class="toggle-btn active" onclick="setHasSite(true)">SÍ TIENE</button>
+                    <button id="btn-site-no" class="toggle-btn" onclick="setHasSite(false)">NO TIENE</button>
                 </div>
             </div>
         </section>
@@ -57,28 +64,19 @@
         </nav>
 
         <section id="tab-cold-call" class="tab-content active">
-            <div class="scenario-grid">
-                <div class="output-card glass">
-                    <div class="card-header">
-                        <h3>Escenario: SÍ tienen sitio</h3>
-                        <button class="copy-btn" onclick="copyText('cc-has-site')">Copiar</button>
-                    </div>
-                    <div id="cc-has-site" class="script-content"></div>
+            <div class="output-card glass single-card">
+                <div class="card-header">
+                    <h3 id="cc-title">Escenario: Llamada en Frío</h3>
+                    <button class="copy-btn" onclick="copyText('cc-output')">Copiar</button>
                 </div>
-                <div class="output-card glass">
-                    <div class="card-header">
-                        <h3>Escenario: NO tienen sitio</h3>
-                        <button class="copy-btn" onclick="copyText('cc-no-site')">Copiar</button>
-                    </div>
-                    <div id="cc-no-site" class="script-content"></div>
-                </div>
+                <div id="cc-output" class="script-content"></div>
             </div>
         </section>
 
         <section id="tab-stage-2" class="tab-content">
-            <div class="output-card glass">
+            <div class="output-card glass single-card">
                 <div class="card-header">
-                    <h3>Script: Durante la Llamada (Muestra de Prototipo)</h3>
+                    <h3>Script: Durante la Llamada (Cierre)</h3>
                     <button class="copy-btn" onclick="copyText('stage-2-output')">Copiar</button>
                 </div>
                 <div id="stage-2-output" class="script-content"></div>
@@ -86,31 +84,20 @@
         </section>
 
         <section id="tab-whatsapp" class="tab-content">
-            <div class="scenario-grid">
-                <div class="output-card glass">
-                    <div class="card-header">
-                        <h3>Escenario 1: Sin Sitio Web</h3>
-                        <button class="copy-btn" onclick="copyText('wa-no-site')">Copiar</button>
-                    </div>
-                    <div id="wa-no-site" class="script-content"></div>
+            <div class="output-card glass single-card">
+                <div class="card-header">
+                    <h3 id="wa-title">Escenario: Mensaje de WhatsApp</h3>
+                    <button class="copy-btn" onclick="copyText('wa-output')">Copiar</button>
                 </div>
-                <div class="output-card glass">
-                    <div class="card-header">
-                        <h3>Escenario 2: Sitio Malo/Viejo</h3>
-                        <button class="copy-btn" onclick="copyText('wa-bad-site')">Copiar</button>
-                    </div>
-                    <div id="wa-bad-site" class="script-content"></div>
-                </div>
+                <div id="wa-output" class="script-content"></div>
             </div>
         </section>
 
         <section id="tab-rebuttals" class="tab-content">
             <div class="search-container glass">
-                <input type="text" id="objection-search" placeholder="Busca por palabra clave (ej: tiempo, caro, sobrino...)" oninput="filterObjections()">
+                <input type="text" id="objection-search" placeholder="Busca por palabra clave..." oninput="filterObjections()">
             </div>
-            <div id="rebuttals-container" class="rebuttals-accordion">
-                <!-- Accordion items injected here -->
-            </div>
+            <div id="rebuttals-container" class="rebuttals-accordion"></div>
         </section>
 
         <footer class="app-footer">
