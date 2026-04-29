@@ -1,48 +1,38 @@
 const scripts = {
     es: {
         coldCall: {
-            hasSite: `"[SALUDO]. Te soy directo: no te llamo para comprarte nada.
+            hasSite: `"[SALUDO]. Te hablo directo: no te llamo para venderte servicios genéricos ni marketing.
 
-Estaba viendo [Nicho] en la zona y di con ustedes. El nivel que manejan es muy bueno… pero la web que tienen hoy no refleja eso ni de cerca.
+Estaba analizando negocios de [Nicho] en la zona y di con ustedes. Sé que el nivel de servicio que dan en [Marca] es premium... pero la presencia digital que tienen hoy en Google los hace ver como un negocio promedio.
 
-Cuando alguien entra ahí, no percibe el valor real y termina comparándote con opciones más baratas o más “modernas”.
+Cuando un [Outcome] los busca para validar su autoridad antes de comprar, no percibe el estatus real y termina yéndose a opciones más baratas. 
 
-Decime algo… ¿vos sentís que hoy tu web te ayuda a cerrar mejores clientes o que simplemente está ahí y no mueve la aguja?"
+Decime algo siendo 100% transparente... ¿vos sentís que hoy su imagen en internet los posiciona como líderes indiscutidos, o que están perdiendo plata porque no transmite confianza?"
 
-*(PAUSA – que responda)*
+*(PAUSA ESTRICTA – que responda)*
 
-"Claro, es lo que suelo ver.
+"Es exactamente lo que detecté. Mirá, soy [Speaker] de Saint DAC. Nosotros no hacemos webs tradicionales, armamos activos digitales inmersivos para elevar el estatus de negocios como el tuyo.
 
-Mirá, soy [Speaker]. Me dedico justamente a resolver ese punto.
+Viendo su potencial, me adelanté. Usé mi equipo y armé un prototipo de vanguardia de cómo debería verse [Marca] para filtrar curiosos y atraer directamente a esos [Outcome] a su WhatsApp.
 
-Viendo eso, me adelanté y armé un borrador de cómo debería verse tu negocio para que transmita el nivel que realmente tenés y te traiga clientes más calificados.
+Son 5 minutos de reloj. Te comparto pantalla, te muestro el diseño funcionando y vos decidís si les sirve o no. Cero compromiso. 
+Mañana estoy a full, pero te hago un hueco... ¿10 o 11 te queda mejor?"`,
+            noSite: `"[SALUDO]. Te hablo directo: no te llamo para venderte servicios genéricos ni marketing.
 
-No estoy seguro si esto encaja con lo que ustedes buscan ahora, pero verlo no tiene costo.
+Estaba buscando negocios de [Nicho] en la zona y vi que tienen muy buena reputación en [Marca]… pero me llamó la atención que no encontré una presencia digital a la altura.
 
-Son 5 minutos, te comparto pantalla y vos decidís si tiene sentido o no.
+Hoy eso significa algo simple: cuando un [Outcome] los busca en Google para validar su autoridad, decide irse con la competencia que sí transmite confianza.
 
-Mañana tengo la agenda bastante cargada, pero te hago un hueco rápido… ¿te queda mejor a las 10 o a las 11?"`,
-            noSite: `"[SALUDO]. Te soy sincero: no te llamo para contratarte ni venderte algo ahora.
+Decime algo siendo 100% transparente… ¿vos sentís que hoy su imagen en internet los posiciona como líderes indiscutidos, o que están perdiendo plata porque no tienen presencia?"
 
-Estaba buscando [Nicho] por la zona y vi que tienen muy buena reputación… pero me llamó la atención que no encontré una web oficial.
+*(PAUSA ESTRICTA – que responda)*
 
-Hoy eso significa algo simple: cuando alguien te busca, Google decide mandarlo a la competencia que sí está mejor posicionada.
+"Es exactamente lo que detecté. Mirá, soy [Speaker] de Saint DAC. Nosotros no hacemos webs tradicionales, armamos activos digitales inmersivos para elevar el estatus de negocios como el tuyo.
 
-Decime… ¿vos sos consciente de cuántos posibles clientes se te están yendo por no tener esa presencia?"
+Viendo su potencial, me adelanté. Usé mi equipo y armé un prototipo de vanguardia de cómo debería verse [Marca] en internet para filtrar curiosos y atraer directamente a esos [Outcome] a su WhatsApp.
 
-*(PAUSA – que responda)*
-
-"Entiendo.
-
-Mirá, soy [Speaker]. Trabajo con negocios como el tuyo en eso puntual.
-
-Como vi el potencial que tienen, me adelanté y armé un borrador de cómo debería verse tu negocio online para captar esos clientes que hoy se están perdiendo.
-
-No sé si esto es prioridad para ustedes ahora, pero verlo no tiene costo.
-
-Son 5 minutos, te muestro en pantalla y vos decidís.
-
-Mañana estoy bastante justo de tiempo, pero te hago un hueco… ¿10 o 11 te sirve mejor?"`
+Son 5 minutos de reloj. Te comparto pantalla, te muestro el diseño funcionando y vos decidís si les sirve o no. Cero compromiso.
+Mañana estoy a full, pero te hago un hueco... ¿10 o 11 te queda mejor?"`
         },
         stage2: {
             title: "Fase 2: El Cierre (Durante la Llamada)",
@@ -59,76 +49,62 @@ Mañana estoy bastante justo de tiempo, pero te hago un hueco… ¿10 o 11 te si
 "Mi sistema es simple: el trabajo pesado ya está hecho. Si te gusta lo que ves y querés que lo lancemos oficialmente para [Marca], el costo es de [Precio], llave en mano. Si preferís quedarte como estás, no hay problema. ¿Qué te pareció el diseño?"`
         },
         whatsapp: {
-            hasSite: `**Mensaje 1 (gancho):**
+            hasSite: `**Mensaje 1 (Gancho de Estatus):**
 "[SALUDO]. Te escribo directo: no soy cliente ni te voy a vender nada ahora.
-Estuve viendo tu negocio y la verdad, el nivel que tenés es bueno… pero la web que estás usando hoy no lo refleja.
-Eso hace que gente que podría pagarte bien termine yéndose con otros que “parecen” más profesionales online.
+Estuve analizando [Marca] y la verdad, el nivel de su servicio es excelente… pero el sitio que usan hoy los tira para abajo.
+Eso hace que los [Outcome] que podrían pagarles muy bien terminen yéndose con competidores que “parecen” más premium online.
 
 Decime algo, siendo honesto:
-¿alguna vez pensaste cuántos clientes estás perdiendo por esa diferencia entre lo que sos y lo que mostrás?"
+¿Alguna vez pensaste cuánta plata están dejando en la mesa por esa diferencia entre el servicio premium que dan y la imagen que muestran en Google?"
 
-*(PAUSA. NO MANDES MÁS HASTA QUE RESPONDA)*
-
----
-**Mensaje 2 (propuesta + cierre):**
-"Te entiendo. Mirá, perdón que no me presenté bien: soy [Speaker]. Me dedico a justamente corregir eso en negocios como el tuyo.
-
-Como vi potencial, ya me adelanté y armé un diseño de cómo debería verse tu negocio para atraer mejores clientes.
-
-Verlo no tiene costo.
-Son 5 minutos, te comparto pantalla y vos decidís si tiene sentido o no.
-
-Mañana tengo agenda cargada, pero te hago un hueco.
-¿10:00 o 11:00 te queda mejor?"
+*(PAUSA. NO MANDAR HASTA QUE RESPONDA)*
 
 ---
-**Si pide link / PDF:**
-"Me encantaría mandártelo, pero por acá pierde todo el sentido y no vas a ver el valor real.
-Por eso te lo muestro yo en 5 minutos y listo.
-¿10 o 11?"
+**Mensaje 2 (El Caballo de Troya):**
+"Te entiendo. Mirá, soy [Speaker] de Saint DAC. Nos dedicamos justamente a inyectar autoridad visual en negocios locales.
+
+Como vi el potencial que tienen, ya me adelanté. Armé un prototipo inmersivo de cómo debería ser la experiencia digital de [Marca] para atraer esos [Outcome].
+
+Verlo no tiene costo. Son 5 minutos en un Meet, te comparto pantalla y vos decidís.
+¿10:00 o 11:00 te queda mejor mañana?"
 
 ---
-**Si tira “no me interesa”:**
-"Perfecto, entonces entiendo que ya estás cubriendo todo el flujo de clientes que necesitás y no hay fuga.
-Si en algún momento querés validar eso, lo vemos.
-Sino, seguimos así y listo."`,
-            noSite: `**Mensaje 1 (gancho):**
+🛑 **SI PIDE QUE LE MANDES EL LINK / PDF (DEFENSA SAINT DAC):**
+"Me encantaría pasártelo [Nombre], pero no hacemos plantillas genéricas. Es código inmersivo con animaciones. Si te mando un link por acá, lo vas a ver en el celular mientras hacés otra cosa, no vas a apreciar la fluidez, y mi trabajo pierde todo el sentido.
+Son 5 minutos en vivo para que veas la ingeniería detrás. Si no tenés 5 minutos para ver cómo mejorar la captación de [Marca], lo dejamos acá. Sino, ¿10 o 11?"`,
+            noSite: `**Mensaje 1 (Gancho de Estatus):**
 "[SALUDO]. Te escribo directo: no soy cliente ni te quiero vender nada ahora.
 
-Estuve buscando [Nicho] en la zona y vi que tu negocio tiene muy buena reputación…
-pero me llamó la atención que no tenés web.
+Estuve buscando negocios de [Nicho] en la zona y vi que [Marca] tiene excelente nivel…
+pero me llamó la atención que no encontré una web oficial.
 
-Hoy eso significa que Google está mandando clientes tuyos directo a la competencia.
+Hoy eso significa que Google está mandando a esos [Outcome] directo a tu competencia.
 
-Decime algo:
-¿tenés idea cuántas oportunidades estás perdiendo por no estar ahí?"
+Decime algo, siendo honesto:
+¿Alguna vez pensaste cuánta plata están dejando en la mesa por no tener una presencia inmersiva en internet que valide lo que hacen?"
 
-*(PAUSA. ESPERAR RESPUESTA)*
-
----
-**Mensaje 2 (propuesta + cierre):**
-"Entiendo. Mirá, soy [Speaker]. Me dedico a ayudar negocios como el tuyo a capturar esos clientes que hoy se escapan.
-
-Como ya analicé tu caso, me adelanté y armé un diseño de cómo debería verse tu negocio online para atraer ese tipo de clientes.
-
-Verlo es gratis.
-Son 5 minutos, te comparto pantalla y vos mismo decidís si sirve o no.
-
-Mañana estoy a full, pero te hago un hueco rápido.
-¿10:00 o 11:00?"
+*(PAUSA ESTRICTA. ESPERAR RESPUESTA)*
 
 ---
-**Si pide que se lo mandes:**
-"Me gustaría pasártelo, pero por acá no se entiende nada y pierde todo el impacto.
-Por eso lo vemos juntos 5 minutos y listo.
-¿10 o 11?"
+**Mensaje 2 (El Caballo de Troya):**
+"Entiendo. Mirá, soy [Speaker] de Saint DAC. Nos dedicamos justamente a inyectar autoridad visual en negocios premium.
+
+Como ya analicé su caso y vi potencial, me adelanté. Armé un prototipo inmersivo de cómo debería ser la experiencia digital de [Marca] para atraer a esos [Outcome].
+
+Verlo no tiene costo. Son 5 minutos en un Meet, te comparto pantalla y vos mismo decidís.
+¿10:00 o 11:00 te queda mejor mañana?"
 
 ---
-**Si responde hostil:**
-"Te entiendo, si ya estás cubierto y no necesitás más clientes, entonces no tiene sentido.
+🛑 **SI PIDE QUE LE MANDES EL LINK / PDF (DEFENSA SAINT DAC):**
+"Me encantaría pasártelo [Nombre], pero no hacemos plantillas genéricas. Es código inmersivo con animaciones. Si te mando un link por acá, lo vas a ver en el celular mientras hacés otra cosa, no vas a apreciar la fluidez, y mi trabajo pierde todo el sentido.
+Son 5 minutos en vivo para que veas la ingeniería detrás. Si no tenés 5 minutos para ver cómo mejorar la captación de [Marca], lo dejamos acá. Sino, ¿10 o 11?"
 
-Retiro la propuesta y te dejo tranquilo.
-Si en algún momento querés validar eso, lo vemos."`
+---
+**Si responde hostil (Retirada):**
+"Te entiendo, si ya están cubiertos y no necesitan más [Outcome], entonces no tiene sentido.
+
+Retiro la propuesta y los dejo tranquilos.
+Si en algún momento deciden escalar, lo vemos."`
         },
         rebuttals: [
             // Frente 1
@@ -143,6 +119,7 @@ Si en algún momento querés validar eso, lo vemos."`
             { c: "Frente 2: Pantallas de Humo", t: "El Fantasma: 'Después te aviso / Me pongo en contacto'", q: "despues fantasma contacto luego mentira", a: "Mirá [Nombre], siendo 100% honesto, cuando me dicen 'después te aviso', casi nunca vuelven a aparecer. Vamos al grano para no perder tiempo ninguno de los dos: ¿qué sentís que está faltando realmente para que avancemos con esto hoy? ¿Es el diseño, es la plata, o dije algo mal?" },
             { c: "Frente 2: Pantallas de Humo", t: "Mandame el PDF por WhatsApp", q: "pdf whatsapp mandame enviar", a: "Los reportes técnicos crudos son inentendibles si no sos desarrollador. Además, quiero mostrarte el prototipo de [Marca] en vivo con las animaciones. Un link suelto pierde el sentido. Son 5 minutos de pantalla, ves el problema y la solución. ¿Agendamos?" },
             { c: "Frente 2: Pantallas de Humo", t: "El 'Sí a todo' (No compra pero no dice por qué)", q: "si a todo falso picaporte", a: "(Hacé que te vas/terminás la llamada). Bueno [Nombre], gracias por tu tiempo. Ah, antes de cortar, haceme un favor: fuera de libreto, ¿cuál fue la razón real por la que esto no te cerró hoy? (Esperás). Qué bueno que me decís eso, se ve que no te lo expliqué bien. Dame un minuto más y te muestro cómo resolvemos exactamente eso." },
+            { c: "Frente 2: Pantallas de Humo", t: "Confusión de Servicio: 'Ya tenemos a alguien que nos maneja las redes / el Instagram'", q: "redes instagram community manager alguien", a: "¡Excelente que ya inviertan en redes, [Nombre]! Pero no me malinterpretes, no soy Community Manager ni vendo posteos. Las redes te dan visibilidad, pero cuando ese cliente de alto poder adquisitivo quiere confirmar si tu empresa es seria, sale de Instagram y va a buscar tu web a Google. Si ahí no hay una experiencia inmersiva que lo impacte, todo el trabajo de tus redes se pierde. Dejame mostrarte en 5 minutos el eslabón que les falta. ¿10 o 11?" },
 
             // Frente 3
             { c: "Frente 3: Heridas del Pasado", t: "Miedo a Estafas: 'Ya contraté a alguien y me cagaron'", q: "estafa agencia humo cagaron", a: "Te re entiendo. Hay mucha gente vendiendo humo. Pensando en esa vez que te fue mal... ¿qué sentís que le faltó a esa agencia? (Esperás). Exacto. Ahora decime vos... viendo el prototipo que ya te armé para [Marca] y cómo funciona, ¿por qué creés que esto es distinto a lo que probaste antes? (Que se venda solo)." },
@@ -152,56 +129,48 @@ Si en algún momento querés validar eso, lo vemos."`
             // Frente 4
             { c: "Frente 4: Poder y Ego", t: "El Sabelotodo: 'Presume que sabe más'", q: "sabelotodo sabe marketing experto ego", a: "(No discutas. Alimentá el ego). ¡Qué locura, se nota que la tenés clarísima con esto! Con razón [Marca] está donde está. Justamente por eso, como entendés de retención y conversión mejor que el promedio, este ecosistema inmersivo te va a hacer mucho sentido. Fijate cómo la estructura de navegación hace exactamente lo que vos decís..." },
             { c: "Frente 4: Poder y Ego", t: "Detalles técnicos ahora", q: "errores ahora cuales", a: "A simple vista vi problemas en la estructura de lectura para Google y detalles en la conversión móvil. Pero soy un profesional, no hablo al aire. Quiero meter a [Marca] en mis herramientas, sacar el reporte exacto y mostrártelo con datos duros. Por eso te pido 5 minutos mañana." },
+            { c: "Frente 4: Poder y Ego", t: "El Dueño Ocupado / Cortante (Retirada Estratégica)", q: "rapido ocupado apurate no me molestes", a: "(Tono súper tranquilo, bajando la velocidad). [Nombre], percibo que estás a mil y no quiero ser una interrupción. Siendo totalmente transparente: nosotros trabajamos con negocios premium y yo me tomé el tiempo de diseñar una infraestructura inmersiva para [Marca] sin cobrarles nada. Si el estatus digital de la empresa no es una prioridad para ustedes en este trimestre, me lo decís, borramos el código y no perdemos el tiempo ninguno de los dos. ¿Es prioridad o lo descartamos?" },
 
             // Frente 5
             { c: "Frente 5: Logística y Financiero", t: "Es muy caro (Anclaje)", q: "caro precio presupuesto reales 10000", a: "No estamos hablando de precios ahora, pero para que te des una idea, agencias en São Paulo están cobrando 10 mil reales por un sitio inmersivo de este nivel. Yo ya te armé la maqueta gratis. Mirala 5 minutos, y si sentís que es lo que [Marca] necesita para no perder clientes, te vas a sorprender de lo accesible que es." },
-            { c: "Frente 5: Logística y Financiero", t: "El Escudo del Tercero: 'Tengo que hablarlo con mi socio'", q: "socio pareja escudo tercero hablarlo", a: "Entiendo perfecto. Pero sacando a tu socio de la ecuación por un segundo, ¿a vos te convence al 100%? (Si dice sí): Supongamos que hablás con tu socio y te dice que NO. ¿Qué hacés? ¿Dejás la web de [Marca] como está perdiendo clientes, o le peleás la decisión porque sabés que esto es lo que necesitan?" }
+            { c: "Frente 5: Logística y Financiero", t: "El Escudo del Tercero: 'Tengo que hablarlo con mi socio'", q: "socio pareja escudo tercero hablarlo", a: "Entiendo perfecto. Pero sacando a tu socio de la ecuación por un segundo, ¿a vos te convence al 100%? (Si dice sí): Supongamos que hablás con tu socio y te dice que NO. ¿Qué hacés? ¿Dejás la web de [Marca] como está perdiendo clientes, o le peleás la decisión porque sabés que esto es lo que necesitan?" },
+            { c: "Frente 5: Logística y Financiero", t: "Boca a Boca Defensivo: 'Solo trabajamos por referidos / Ya nos va bien'", q: "boca referidos bien llenos", a: "Me imagino, el buen servicio siempre trae referidos. Pero pensalo así: cuando alguien te refiere a un [Outcome], esa persona no te llama a ciegas. Te busca en Google para ver quién sos. Si tu competencia tiene un ecosistema digital nivel Dios y vos no, ese referido duda. Mi trabajo no es traerte gente curiosa, es asegurar que el referido 'Clase A' confíe ciegamente en [Marca] antes de saludarte. Son 5 minutos de Meet. ¿Miramos el diseño que les armé?" }
         ]
     },
     pt: {
         coldCall: {
-            hasSite: `"[SALUDO]. Vou ser direto: não te ligo para comprar nada.
+            hasSite: `"[SALUDO]. Vou ser direto: não te ligo para vender serviços genéricos nem marketing.
 
-Estava vendo [Nicho] na região e encontrei vocês. O nível que entregam é muito bom… mas o site que têm hoje não reflete isso nem de perto.
+Estava analisando negócios de [Nicho] na região e encontrei vocês. Sei que o nível de serviço que entregam na [Marca] é premium... mas a presença digital que têm hoje no Google faz vocês parecerem um negócio na média.
 
-Quando alguém entra lá, não percebe o valor real e acaba te comparando com opções mais baratas ou mais 'modernas'.
+Quando um [Outcome] procura vocês para validar sua autoridade antes de comprar, não percebe o status real e acaba indo para opções mais baratas.
 
-Me diz uma coisa… você sente que hoje seu site te ajuda a fechar com melhores clientes ou simplesmente está lá e não faz diferença?"
+Me diz uma coisa, sendo 100% transparente... você sente que hoje a imagem de vocês na internet os posiciona como líderes indiscutíveis, ou que estão perdendo dinheiro porque não transmite confiança?"
 
-*(PAUSA – que responda)*
+*(PAUSA ESTRITA – que responda)*
 
-"Claro, é o que costumo ver.
+"É exatamente o que detectei. Olha, sou [Speaker] da Saint DAC. Nós não fazemos sites tradicionais, montamos ativos digitais imersivos para elevar o status de negócios como o seu.
 
-Olha, sou [Speaker]. Me dedico justamente a resolver esse ponto.
+Vendo o seu potencial, me adientei. Usei a minha equipe e montei um protótipo de ponta de como deveria ser a [Marca] para filtrar curiosos e atrair diretamente esses [Outcome] para o seu WhatsApp.
 
-Vendo isso, me adientei e montei um rascunho de como deveria ser o seu negócio para que transmita o nível que você realmente tem e te traga clientes mais qualificados.
+São 5 minutos de relógio. Te compartilho a tela, te mostro o design funcionando e você decide se serve para vocês ou não. Zero compromisso.
+Amanhã estou na correria, mas abro um espaço... 10 ou 11 fica melhor?"`,
+            noSite: `"[SALUDO]. Falo direto: não te ligo para vender serviços genéricos nem marketing.
 
-Não tenho certeza se isso se encaixa com o que vocês buscam agora, mas ver não custa nada.
+Estava buscando negócios de [Nicho] na região e vi que têm uma ótima reputação na [Marca]… mas me chamou a atenção que não encontrei uma presença digital à altura.
 
-São 5 minutos, te compartilho a tela e você decide se faz sentido ou não.
+Hoje isso significa algo simples: quando um [Outcome] procura vocês no Google para validar sua autoridade, ele decide ir para a concorrência que sim transmite confiança.
 
-Amanhã tenho a agenda bem cheia, mas abro um espaço rápido… fica melhor às 10 ou às 11?"`,
-            noSite: `"[SALUDO]. Sou sincero: não te ligo para contratar nem te vender algo agora.
+Me diz uma coisa, sendo 100% transparente... você sente que hoje a imagem de vocês na internet os posiciona como líderes indiscutíveis, ou que estão perdendo dinheiro porque não têm presença?"
 
-Estava buscando [Nicho] pela região e vi que têm uma reputação muito boa… mas me chamou a atenção que não encontrei um site oficial.
+*(PAUSA ESTRITA – que responda)*
 
-Hoje isso significa algo simples: quando alguém te busca, o Google decide mandá-lo para a concorrência que sim está melhor posicionada.
+"É exatamente o que detectei. Olha, sou [Speaker] da Saint DAC. Nós não fazemos sites tradicionais, montamos ativos digitais imersivos para elevar o status de negócios como o seu.
 
-Me diz… você tem noção de quantos possíveis clientes estão indo embora por não ter essa presença?"
+Vendo o seu potencial, me adientei. Usei a minha equipe e montei um protótipo de ponta de como deveria ser a [Marca] na internet para filtrar curiosos e atrair diretamente esses [Outcome] para o seu WhatsApp.
 
-*(PAUSA – que responda)*
-
-"Entendo.
-
-Olha, sou [Speaker]. Trabalho com negócios como o seu nisso pontualmente.
-
-Como vi o potencial que têm, me adientei e montei um rascunho de como deveria ser a sua presença online para captar esses clientes que hoje estão se perdendo.
-
-Não sei se isso é prioridade para vocês agora, mas ver não custa nada.
-
-São 5 minutos, te mostro na tela e você decide.
-
-Amanhã estou com o tempo bem apertado, mas abro um espaço… 10 ou 11 fica melhor?"`
+São 5 minutos de relógio. Te compartilho a tela, te mostro o design funcionando e você decide se serve para vocês ou não. Zero compromisso.
+Amanhã estou na correria, mas abro um espaço... 10 ou 11 fica melhor?"`
         },
         stage2: {
             title: "Fase 2: O Fechamento (Durante a Chamada)",
@@ -218,76 +187,62 @@ Amanhã estou com o tempo bem apertado, mas abro um espaço… 10 ou 11 fica mel
 "Meu sistema é simples: o trabalho pesado já está pronto. Se você gostou e quer que lancemos oficialmente para a [Marca], o custo é de [Precio]. Se preferir continuar como está, sem problemas. O que achou do design?"`
         },
         whatsapp: {
-            hasSite: `**Mensagem 1 (gancho):**
+            hasSite: `**Mensagem 1 (Gancho de Status):**
 "[SALUDO]. Te escrevo direto: não sou cliente nem vou te vender nada agora.
-Estive vendo o seu negócio e a verdade é que o nível que vocês têm é bom… mas o site que estão usando hoje não reflete isso.
-Isso faz com que pessoas que poderiam te pagar bem acabem indo com outros que 'parecem' mais profissionais online.
+Estive analisando a [Marca] e, a verdade é que o nível do serviço de vocês é excelente… mas o site que usam hoje puxa vocês pra baixo.
+Isso faz com que os [Outcome] que poderiam pagar muito bem acabem indo para concorrentes que 'parecem' mais premium online.
 
 Me diz uma coisa, sendo honesto:
-você já parou pra pensar quantos clientes está perdendo por essa diferença entre o que você é e o que mostra?"
+Alguma vez parou pra pensar quanto dinheiro estão deixando na mesa por essa diferença entre o serviço premium que entregam e a imagem que mostram no Google?"
 
 *(PAUSA. NÃO MANDE MAIS ATÉ QUE RESPONDA)*
 
 ---
-**Mensagem 2 (proposta + fechamento):**
-"Te entendo. Olha, desculpe não me apresentar direito: sou [Speaker]. Me dedico justamente a corrigir isso em negócios como o seu.
+**Mensagem 2 (O Cavalo de Troia):**
+"Te entendo. Olha, sou [Speaker] da Saint DAC. Nos dedicamos justamente a injetar autoridade visual em negócios locais.
 
-Como vi potencial, já me adientei e montei um design de como deveria ser o seu negócio para atrair melhores clientes.
+Como vi o potencial que têm, já me adientei. Montei um protótipo imersivo de como deveria ser a experiência digital da [Marca] para atrair esses [Outcome].
 
-Ver não tem custo.
-São 5 minutos, te compartilho a tela e você decide se faz sentido ou não.
-
-Amanhã tenho a agenda cheia, mas abro um espaço.
-10:00 ou 11:00 fica melhor para você?"
+Ver não tem custo. São 5 minutos em um Meet, te compartilho a tela e você decide.
+10:00 ou 11:00 fica melhor amanhã?"
 
 ---
-**Se pedir link / PDF:**
-"Adoraria te mandar, mas por aqui perde todo o sentido e você não vai ver o valor real.
-Por isso te mostro em 5 minutos e pronto.
-10 ou 11?"
-
----
-**Se disser "não me interessa":**
-"Perfeito, então entendo que já estão cobrindo todo o fluxo de clientes que precisam e não há fuga.
-Se em algum momento quiser validar isso, a gente vê.
-Senão, seguimos assim e tudo certo."`,
-            noSite: `**Mensagem 1 (gancho):**
+🛑 **SE PEDIR O LINK / PDF (DEFESA SAINT DAC):**
+"Adoraria te passar, [Nombre], mas não fazemos templates genéricos. É código imersivo com animações. Se eu te mandar um link por aqui, você vai ver no celular enquanto faz outra coisa, não vai apreciar a fluidez, e meu trabalho perde todo o sentido.
+São 5 minutos ao vivo para você ver a engenharia por trás. Se não tem 5 minutos para ver como melhorar a captação da [Marca], deixamos por aqui. Senão, 10 ou 11?"`,
+            noSite: `**Mensagem 1 (Gancho de Status):**
 "[SALUDO]. Te escrevo direto: não sou cliente nem quero te vender nada agora.
 
-Estive buscando [Nicho] na região e vi que o seu negócio tem uma reputação muito boa…
-mas me chamou a atenção que não têm site.
+Estive buscando negócios de [Nicho] na região e vi que a [Marca] tem excelente nível…
+mas me chamou a atenção que não encontrei um site oficial.
 
-Hoje isso significa que o Google está mandando seus clientes direto para a concorrência.
+Hoje isso significa que o Google está mandando esses [Outcome] direto para a sua concorrência.
 
-Me diz uma coisa:
-você tem ideia de quantas oportunidades está perdendo por não estar lá?"
+Me diz uma coisa, sendo honesto:
+Alguma vez parou pra pensar quanto dinheiro estão deixando na mesa por não ter uma presença imersiva na internet que valide o que vocês fazem?"
 
-*(PAUSA. ESPERAR RESPOSTA)*
-
----
-**Mensagem 2 (proposta + fechamento):**
-"Entendo. Olha, sou [Speaker]. Me dedico a ajudar negócios como o seu a capturar esses clientes que hoje escapam.
-
-Como já analisei seu caso, me adientei e montei um design de como deveria ser o seu negócio online para atrair esse tipo de clientes.
-
-Ver é grátis.
-São 5 minutos, te compartilho a tela e você mesmo decide se serve ou não.
-
-Amanhã estou corrido, mas abro um espaço rápido.
-10:00 ou 11:00?"
+*(PAUSA ESTRITA. ESPERAR RESPOSTA)*
 
 ---
-**Se pedir para mandar:**
-"Gostaria de passar, mas por aqui não dá pra entender nada e perde todo o impacto.
-Por isso vemos juntos em 5 minutos e pronto.
-10 ou 11?"
+**Mensagem 2 (O Cavalo de Troia):**
+"Entendo. Olha, sou [Speaker] da Saint DAC. Nos dedicamos justamente a injetar autoridade visual em negócios premium.
+
+Como já analisei seu caso e vi potencial, me adientei. Montei um protótipo imersivo de como deveria ser a experiência digital da [Marca] para atrair esses [Outcome].
+
+Ver não tem custo. São 5 minutos em um Meet, te compartilho a tela e você mesmo decide.
+10:00 ou 11:00 fica melhor amanhã?"
 
 ---
-**Se responder hostil:**
-"Te entendo, se já estão cobertos e não precisam de mais clientes, então não faz sentido.
+🛑 **SE PEDIR O LINK / PDF (DEFESA SAINT DAC):**
+"Adoraria te passar, [Nombre], mas não fazemos templates genéricos. É código imersivo com animações. Se eu te mandar um link por aqui, você vai ver no celular enquanto faz outra coisa, não vai apreciar a fluidez, e meu trabalho perde todo o sentido.
+São 5 minutos ao vivo para você ver a engenharia por trás. Se não tem 5 minutos para ver como melhorar a captação da [Marca], deixamos por aqui. Senão, 10 ou 11?"
 
-Retiro a proposta e te deixo tranquilo.
-Se em algum momento quiser validar isso, a gente vê."`
+---
+**Se responder hostil (Retirada):**
+"Te entendo, se já estão cobertos e não precisam de mais [Outcome], então não faz sentido.
+
+Retiro a proposta e deixo vocês tranquilos.
+Se em algum momento decidirem escalar, a gente vê."`
         },
         rebuttals: [
             // Frente 1
@@ -302,6 +257,7 @@ Se em algum momento quiser validar isso, a gente vê."`
             { c: "Frente 2: Cortinas de Fumaça", t: "O Fantasma: 'Depois eu te ligo / Entro em contato'", q: "depois fantasma contato ligo mentira", a: "Olha [Nombre], sendo 100% honesto, quando me dizem 'depois eu te aviso', quase nunca voltam a aparecer. Vamos direto ao ponto para não perdermos tempo: o que você sente que está faltando realmente para avançarmos hoje? É o design, é o valor, ou eu falei algo errado?" },
             { c: "Frente 2: Cortinas de Fumaça", t: "Mande o PDF pelo WhatsApp", q: "pdf whatsapp mande enviar", a: "Os relatórios técnicos brutos são difíceis de entender. Além disso, quero te mostrar o protótipo da [Marca] ao vivo com as animações. Um link solto perde o sentido. São 5 minutos de tela. Agendamos?" },
             { c: "Frente 2: Cortinas de Fumaça", t: "O 'Sim pra tudo' (Não compra, mas não diz o porquê)", q: "sim pra tudo falso maçaneta", a: "(Finja que vai encerrar a chamada). Bom [Nombre], obrigado pelo seu tempo. Ah, antes de desligar, me faz um favor: sendo bem sincero, qual foi a razão real por trás de não fecharmos hoje? (Espere). Que bom que me disse isso, pelo visto eu não te expliquei direito. Me dá mais um minuto e te mostro como resolvemos exatamente isso." },
+            { c: "Frente 2: Cortinas de Fumaça", t: "Confusão de Serviço: 'Já temos alguém que cuida das redes / do Instagram'", q: "redes instagram community manager alguem", a: "Excelente que já invistam em redes, [Nombre]! Mas não me entenda mal, não sou Community Manager nem vendo posts. As redes te dão visibilidade, mas quando esse cliente de alto poder aquisitivo quer confirmar se sua empresa é séria, ele sai do Instagram e vai buscar seu site no Google. Se lá não houver uma experiência imersiva que o impacte, todo o trabalho das suas redes se perde. Deixa eu te mostrar em 5 minutos o elo que falta. 10 ou 11?" },
 
             // Frente 3
             { c: "Frente 3: Feridas do Passado", t: "Medo de Golpes: 'Já contratei uma agência e me enrolaram'", q: "golpe agência fumaça enrolaram", a: "Eu super te entendo. Tem muita gente vendendo fumaça. Pensando nessa vez que deu errado... o que você sente que faltou naquela agência? (Espere). Exato. Agora me diz você... vendo o protótipo que já montei para a [Marca] e como funciona, por que você acha que isso é diferente do que você testou antes? (Deixe que ele se venda)." },
@@ -311,10 +267,12 @@ Se em algum momento quiser validar isso, a gente vê."`
             // Frente 4
             { c: "Frente 4: Poder e Ego", t: "O Sabe-tudo: 'Acha que sabe mais'", q: "sabetudo sabe marketing especialista ego", a: "(Não discuta. Alimente o ego). Que legal, dá pra ver que você entende muito disso! Com razão a [Marca] está onde está. Justamente por isso, como você entende de retenção e conversão melhor que a média, esse ecossistema imersivo vai fazer muito sentido para você. Olha como a estrutura de navegação faz exatamente o que você disse..." },
             { c: "Frente 4: Poder e Ego", t: "Detalhes técnicos agora", q: "erros agora quais", a: "À primeira vista vi problemas na estrutura de leitura para o Google e detalhes na conversão mobile. Mas sou um profissional, não falo no ar. Quero colocar a [Marca] nas minhas ferramentas e te mostrar com dados reais. Por isso te peço 5 minutos amanhã." },
+            { c: "Frente 4: Poder e Ego", t: "O Dono Ocupado / Seco (Retirada Estratégica)", q: "rapido ocupado apresse não me incomode", a: "(Tom super tranquilo, diminuindo a velocidade). [Nombre], percebo que você está a mil e não quero ser uma interrupção. Sendo totalmente transparente: nós trabalhamos com negócios premium e eu tirei um tempo para desenhar uma infraestrutura imersiva para a [Marca] sem cobrar nada. Se o status digital da empresa não é uma prioridade para vocês neste trimestre, me avisa, apagamos o código e nenhum de nós perde tempo. É prioridade ou descartamos?" },
 
             // Frente 5
             { c: "Frente 5: Logística e Financeiro", t: "É muito caro (Ancoragem)", q: "caro preço orçamento reais 10000", a: "Não estamos falando de preços agora, mas para você ter uma ideia, agências em São Paulo cobram 10 mil reais por um site imersivo deste nível. Eu já montei sua maquete grátis. Veja por 5 minutos, você vai se surpreender com o quão acessível é implementar isso hoje." },
-            { c: "Frente 5: Logística e Financeiro", t: "O Escudo do Terceiro: 'Tenho que falar com meu sócio'", q: "socio esposa escudo terceiro falar", a: "Entendo perfeitamente. Mas tirando seu sócio da equação por um segundo, você está 100% convencido? (Se disser sim): Suponhamos que você fale com seu sócio e ele diga NÃO. O que você faz? Deixa o site da [Marca] como está, perdendo clientes, ou briga pela decisão porque sabe que é isso que precisam?" }
+            { c: "Frente 5: Logística e Financeiro", t: "O Escudo do Terceiro: 'Tenho que falar com meu sócio'", q: "socio esposa escudo terceiro falar", a: "Entendo perfeitamente. Mas tirando seu sócio da equação por um segundo, você está 100% convencido? (Se disser sim): Suponhamos que você fale com seu sócio e ele diga NÃO. O que você faz? Deixa o site da [Marca] como está, perdendo clientes, ou briga pela decisão porque sabe que é isso que precisam?" },
+            { c: "Frente 5: Logística e Financeiro", t: "Boca a Boca Defensivo: 'Só trabalhamos por indicação / Já estamos bem'", q: "boca indicações indicação cheios", a: "Eu imagino, o bom serviço sempre traz indicações. Mas pense assim: quando alguém te indica para um [Outcome], essa pessoa não te liga às cegas. Ela te busca no Google para ver quem você é. Se o seu concorrente tem um ecossistema digital nível Deus e você não, esse indicado fica em dúvida. Meu trabalho não é te trazer gente curiosa, é garantir que o indicado 'Classe A' confie cegamente na [Marca] antes de te dar bom dia. São 5 minutos de Meet. Vamos olhar o design que montei pra vocês?" }
         ]
     }
 };
@@ -369,6 +327,7 @@ function generateAll() {
     const person = document.getElementById('prospect-person').value.trim();
     const brand = document.getElementById('prospect-brand').value.trim() || (currentLang === 'es' ? '[Marca]' : '[Marca]');
     const niche = document.getElementById('prospect-niche').value.trim() || (currentLang === 'es' ? '[Nicho]' : '[Nicho]');
+    const outcome = document.getElementById('prospect-outcome').value.trim() || (currentLang === 'es' ? '[Cliente Ideal]' : '[Cliente Ideal]');
 
     let saludo, personaLabel;
     if (person) {
@@ -389,6 +348,7 @@ function generateAll() {
             .replace(/\[Speaker\]/g, `<span class="placeholder">${currentSpeaker}</span>`)
             .replace(/\[Marca\]/g, `<span class="placeholder">${brand}</span>`)
             .replace(/\[Nicho\]/g, `<span class="placeholder">${niche}</span>`)
+            .replace(/\[Outcome\]/g, `<span class="placeholder">${outcome}</span>`)
             .replace(/\[Nombre\]/g, `<span class="placeholder">${personaLabel}</span>`);
     };
 

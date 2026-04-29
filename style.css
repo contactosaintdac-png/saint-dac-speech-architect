@@ -129,7 +129,7 @@ h1, h2, h3, .logo {
 /* Config Panel */
 .config-panel { padding: 1.5rem; margin-bottom: 2rem; }
 
-.input-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem; }
+.input-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-bottom: 1.5rem; }
 
 .toggle-row {
     display: flex;
