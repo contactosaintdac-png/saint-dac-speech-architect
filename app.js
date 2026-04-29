@@ -125,7 +125,12 @@ Por eso lo vemos juntos 5 minutos y listo.
 
 ---
 **Si responde hostil:**
-"Te entiendo, si ya estás cubierto y no ne        rebuttals: [
+"Te entiendo, si ya estás cubierto y no necesitás más clientes, entonces no tiene sentido.
+
+Retiro la propuesta y te dejo tranquilo.
+Si en algún momento querés validar eso, lo vemos."`
+        },
+        rebuttals: [
             // Frente 1
             { c: "Frente 1: Resistencia General", t: "No me interesa", q: "no interesa gracias", a: "Te re entiendo, y hacés bien en decirme que no porque seguro te viven bombardeando agencias. No te quiero vender un plan. Literalmente te hablo porque vi que tu web actual te hace perder clientes y ya me adelanté a armarte la solución visual gratis. Dame 5 minutos para mostrártela. Si no te sirve, me cortás y listo." },
             { c: "Frente 1: Resistencia General", t: "Ocupado: 'Estoy a mil / No tengo tiempo'", q: "tiempo ocupado mil", a: "Justamente por eso te hablo, sé que como dueño de negocio estás a mil. Por eso no te pido reuniones de una hora ni que llenes formularios. Ya me adelanté e hice todo el laburo pesado yo. Son 5 minutos de reloj. Te muestro la solución visual y te dejo seguir laburando. ¿Te robo 5 minutos hoy a las 17 o mañana a la mañana?" },
