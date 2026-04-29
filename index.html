@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saint DAC | Speech Architect</title>
+    <title>Saint DAC | Speech Architect v2</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@300;600;800&display=swap" rel="stylesheet">
@@ -20,39 +20,68 @@
             <div class="logo">
                 <span class="logo-saint">SAINT</span><span class="logo-dac">DAC</span>
             </div>
-            <h1 class="app-title">Speech Architect</h1>
-            <div class="lang-selector">
-                <button id="btn-es" class="lang-btn active" onclick="setLanguage('es')">ES</button>
-                <button id="btn-pt" class="lang-btn" onclick="setLanguage('pt')">PT</button>
+            <div class="header-controls">
+                <div class="speaker-selector glass">
+                    <button id="btn-brian" class="speaker-btn active" onclick="setSpeaker('Brian')">BRIAN</button>
+                    <button id="btn-pamela" class="speaker-btn" onclick="setSpeaker('Pamela')">PAMELA</button>
+                </div>
+                <div class="lang-selector">
+                    <button id="btn-es" class="lang-btn active" onclick="setLanguage('es')">ES</button>
+                    <button id="btn-pt" class="lang-btn" onclick="setLanguage('pt')">PT</button>
+                </div>
             </div>
         </header>
 
         <section class="config-panel glass">
-            <div class="input-group">
-                <label for="prospect-name">Nombre del Prospecto</label>
-                <input type="text" id="prospect-name" placeholder="Ej: Bruno, Miller, Emma..." oninput="generateAll()">
-            </div>
-            <div class="input-group">
-                <label for="prospect-niche">Nicho / Rubro</label>
-                <input type="text" id="prospect-niche" placeholder="Ej: Construtora, Estética, Real Estate..." oninput="generateAll()">
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="prospect-person">Nombre de la Persona</label>
+                    <input type="text" id="prospect-person" placeholder="Luis, Bruno, Miller (O vacío si no sabés)" oninput="generateAll()">
+                </div>
+                <div class="input-group">
+                    <label for="prospect-brand">Nombre de la Marca/Empresa</label>
+                    <input type="text" id="prospect-brand" placeholder="Miller Plumbing, Reziero's..." oninput="generateAll()">
+                </div>
+                <div class="input-group">
+                    <label for="prospect-niche">Nicho / Rubro</label>
+                    <input type="text" id="prospect-niche" placeholder="Construtora, Estética..." oninput="generateAll()">
+                </div>
             </div>
         </section>
 
         <nav class="tab-nav">
-            <button class="tab-btn active" onclick="showTab('cold-call')">Llamada en Frío</button>
-            <button class="tab-btn" onclick="showTab('whatsapp')">WhatsApp / Contacto</button>
-            <button class="tab-btn" onclick="showTab('rebuttals')">Manejo de Objeciones</button>
+            <button class="tab-btn active" onclick="showTab('cold-call')">Fase 1: Llamada Frío</button>
+            <button class="tab-btn" onclick="showTab('stage-2')">Fase 2: El Cierre</button>
+            <button class="tab-btn" onclick="showTab('whatsapp')">WhatsApp</button>
+            <button class="tab-btn" onclick="showTab('rebuttals')">Objeciones</button>
         </nav>
 
         <section id="tab-cold-call" class="tab-content active">
+            <div class="scenario-grid">
+                <div class="output-card glass">
+                    <div class="card-header">
+                        <h3>Escenario: SÍ tienen sitio</h3>
+                        <button class="copy-btn" onclick="copyText('cc-has-site')">Copiar</button>
+                    </div>
+                    <div id="cc-has-site" class="script-content"></div>
+                </div>
+                <div class="output-card glass">
+                    <div class="card-header">
+                        <h3>Escenario: NO tienen sitio</h3>
+                        <button class="copy-btn" onclick="copyText('cc-no-site')">Copiar</button>
+                    </div>
+                    <div id="cc-no-site" class="script-content"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tab-stage-2" class="tab-content">
             <div class="output-card glass">
                 <div class="card-header">
-                    <h3>Script: Apertura Clínica</h3>
-                    <button class="copy-btn" onclick="copyText('cold-call-output')">Copiar</button>
+                    <h3>Script: Durante la Llamada (Muestra de Prototipo)</h3>
+                    <button class="copy-btn" onclick="copyText('stage-2-output')">Copiar</button>
                 </div>
-                <div id="cold-call-output" class="script-content">
-                    <!-- Generated text goes here -->
-                </div>
+                <div id="stage-2-output" class="script-content"></div>
             </div>
         </section>
 
@@ -76,8 +105,11 @@
         </section>
 
         <section id="tab-rebuttals" class="tab-content">
-            <div id="rebuttals-container" class="rebuttals-list">
-                <!-- Rebuttals will be injected here -->
+            <div class="search-container glass">
+                <input type="text" id="objection-search" placeholder="Busca por palabra clave (ej: tiempo, caro, sobrino...)" oninput="filterObjections()">
+            </div>
+            <div id="rebuttals-container" class="rebuttals-accordion">
+                <!-- Accordion items injected here -->
             </div>
         </section>
 
