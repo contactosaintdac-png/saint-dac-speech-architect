@@ -156,7 +156,6 @@ Si en algún momento querés validar eso, lo vemos."`
             // Frente 5
             { c: "Frente 5: Logística y Financiero", t: "Es muy caro (Anclaje)", q: "caro precio presupuesto reales 10000", a: "No estamos hablando de precios ahora, pero para que te des una idea, agencias en São Paulo están cobrando 10 mil reales por un sitio inmersivo de este nivel. Yo ya te armé la maqueta gratis. Mirala 5 minutos, y si sentís que es lo que [Marca] necesita para no perder clientes, te vas a sorprender de lo accesible que es." },
             { c: "Frente 5: Logística y Financiero", t: "El Escudo del Tercero: 'Tengo que hablarlo con mi socio'", q: "socio pareja escudo tercero hablarlo", a: "Entiendo perfecto. Pero sacando a tu socio de la ecuación por un segundo, ¿a vos te convence al 100%? (Si dice sí): Supongamos que hablás con tu socio y te dice que NO. ¿Qué hacés? ¿Dejás la web de [Marca] como está perdiendo clientes, o le peleás la decisión porque sabés que esto es lo que necesitan?" }
-        ]andame enviar", a: "Los reportes técnicos crudos son inentendibles si no sos desarrollador. Además, quiero mostrarte el prototipo de [Marca] en vivo con las animaciones. Un link suelto pierde el sentido. Son 5 minutos de pantalla, ves el problema y la solución. ¿Agendamos?" }
         ]
     },
     pt: {
