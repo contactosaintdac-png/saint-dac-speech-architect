@@ -1,48 +1,24 @@
 const scripts = {
     es: {
         coldCall: {
-            hasSite: `"[SALUDO]. Te soy directo: no te llamo para comprarte nada.
+            hasSite: `"Hola, ¿qué tal? ¿Hablo con quien se encarga de la parte comercial de [Marca]?
 
-Estaba viendo [Nicho] en la zona y di con [Marca]. El nivel que manejan es muy bueno… pero la web que tienen hoy no refleja eso ni de cerca.
+Estuve viendo su sitio y tiene un problema claro: no transmite el nivel real que ustedes entregan.
 
-Cuando alguien entra ahí, no percibe el valor real y termina comparándote con opciones más baratas o más “modernas”.
+En la práctica, eso hace que pierdan [Outcome] frente a competidores que parecen más profesionales en lo digital.
 
-Decime algo… ¿vos sentís que hoy tu web te ayuda a cerrar mejores clientes o que simplemente está ahí y no mueve la aguja?"
+Trabajo exactamente con esto y, viendo su potencial, ya armé un borrador de una versión mucho más enfocada en conversión.
 
-*(PAUSA – que responda)*
+¿Con quién puedo ver esto en 2 minutos?"`,
+            noSite: `"Hola, ¿qué tal? ¿Quién es el responsable de la parte comercial de [Marca]?
 
-"Claro, es lo que suelo ver.
+Estuve viendo su presencia y es bien directo: hoy ustedes prácticamente no existen en lo digital.
 
-Mirá, soy [Speaker]. Me dedico justamente a resolver ese punto.
+Eso hace que los [Outcome] que ya están buscando terminen yéndose a la competencia.
 
-Viendo eso, me adelanté y armé un borrador de cómo debería verse [Marca] para que transmita el nivel que realmente tenés y te traiga [Outcome] más calificados.
+Viendo esto, ya dejé armada una base de cómo podrían captar a esos clientes.
 
-No estoy seguro si esto encaja con lo que ustedes buscan ahora, pero verlo no tiene costo.
-
-Son 5 minutos, te comparto pantalla y vos decidís si tiene sentido o no.
-
-Mañana tengo la agenda bastante cargada, pero te hago un hueco rápido… ¿te queda mejor a las 10 o a las 11?"`,
-            noSite: `"[SALUDO]. Te soy sincero: no te llamo para contratarte ni venderte algo ahora.
-
-Estaba buscando [Nicho] por la zona y vi que [Marca] tiene muy buena reputación… pero me llamó la atención que no encontré una web oficial.
-
-Hoy eso significa algo simple: cuando alguien te busca, Google decide mandarlo a la competencia que sí está mejor posicionada.
-
-Decime… ¿vos sos consciente de cuántos posibles clientes se te están yendo por no tener esa presencia?"
-
-*(PAUSA – que responda)*
-
-"Entiendo.
-
-Mirá, soy [Speaker]. Trabajo con negocios como el tuyo en eso puntual.
-
-Como vi el potencial que tienen, me adelanté y armé un borrador de cómo debería verse [Marca] online para captar a esos [Outcome] que hoy se están perdiendo.
-
-No sé si esto es prioridad para ustedes ahora, pero verlo no tiene costo.
-
-Son 5 minutos, te muestro en pantalla y vos decidís.
-
-Mañana estoy bastante justo de tiempo, pero te hago un hueco… ¿10 o 11 te sirve mejor?"`
+¿Con quién puedo ver esto en 2 minutos?"`
         },
         stage2: {
             title: "Fase 2: El Cierre (Durante la Llamada)",
@@ -163,48 +139,24 @@ Si en algún momento querés validar eso, lo vemos."`
     },
     pt: {
         coldCall: {
-            hasSite: `"[SALUDO]. Vou ser direto: não te ligo para comprar nada.
+            hasSite: `"Olá, tudo bem? Falo com quem cuida da parte comercial da [Marca]?
 
-Estava vendo [Nicho] na região e encontrei a [Marca]. O nível que entregam é muito bom… mas o site que têm hoje não reflete isso nem de perto.
+Estive vendo o site de vocês e tem um problema claro: ele não transmite o nível real que vocês entregam.
 
-Quando alguém entra lá, não percebe o valor real e acaba te comparando com opções mais baratas ou mais 'modernas'.
+Na prática, isso faz vocês perderem [Outcome] para concorrentes que parecem mais profissionais no digital.
 
-Me diz uma coisa… você sente que hoje seu site te ajuda a fechar com melhores clientes ou simplesmente está lá e não faz diferença?"
+Trabalho exatamente com isso e, vendo o potencial de vocês, já rascunhei uma versão muito mais focada em conversão.
 
-*(PAUSA – que responda)*
+Com quem posso ver isso em 2 minutos?"`,
+            noSite: `"Olá, tudo bem? Quem é o responsável pela parte comercial da [Marca]?
 
-"Claro, é o que costumo ver.
+Estive vendo a presença de vocês e é bem direto: hoje vocês praticamente não existem no digital.
 
-Olha, sou [Speaker]. Me dedico justamente a resolver esse ponto.
+Isso faz com que [Outcome] que já estão procurando acabem indo para a concorrência.
 
-Vendo isso, me adientei e montei um rascunho de como deveria ser a [Marca] para que transmita o nível que você realmente tem e te traga [Outcome] mais qualificados.
+Vendo isso, já deixei estruturada uma base de como vocês poderiam captar esses clientes.
 
-Não tenho certeza se isso se encaixa com o que vocês buscam agora, mas ver não custa nada.
-
-São 5 minutos, te compartilho a tela e você decide se faz sentido ou não.
-
-Amanhã tenho a agenda bem cheia, mas abro um espaço rápido… fica melhor às 10 ou às 11?"`,
-            noSite: `"[SALUDO]. Sou sincero: não te ligo para contratar nem te vender algo agora.
-
-Estava buscando [Nicho] pela região e vi que a [Marca] tem uma reputação muito boa… mas me chamou a atenção que não encontrei um site oficial.
-
-Hoje isso significa algo simples: quando alguém te busca, o Google decide mandá-lo para a concorrência que sim está melhor posicionada.
-
-Me diz… você tem noção de quantos possíveis clientes estão indo embora por não ter essa presença?"
-
-*(PAUSA – que responda)*
-
-"Entendo.
-
-Olha, sou [Speaker]. Trabalho com negócios como o seu nisso pontualmente.
-
-Como vi o potencial que têm, me adientei e montei um rascunho de como deveria ser a [Marca] online para captar esses [Outcome] que hoje estão se perdendo.
-
-Não sei se isso é prioridade para vocês agora, mas ver não custa nada.
-
-São 5 minutos, te mostro na tela e você decide.
-
-Amanhã estou com o tempo bem apertado, mas abro um espaço… 10 ou 11 fica melhor?"`
+Com quem posso ver isso em 2 minutos?"`
         },
         stage2: {
             title: "Fase 2: O Fechamento (Durante a Chamada)",
